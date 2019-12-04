@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/reset.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/index.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_987940_4rwm23hn4l.css">
+    <title>erpmobile</title>
+    <style name="font-size"></style>
+    <script>
+      window.onload=function () {
+        r();
+      };
+      window.onresize=function () {
+        r();
+      };
+      function r() {
+        let dpr,rem;
+        let docEl = document.documentElement;
+        let fontEl = document.querySelector('style[name="font-size"]');
+        dpr = window.devicePixelRatio;
+        rem = 100*(docEl.clientWidth/750);
+        docEl.setAttribute('data-dpr',dpr);
+        fontEl.innerHTML='html{font-size:'+rem+'px;}';
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but erpmobile doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

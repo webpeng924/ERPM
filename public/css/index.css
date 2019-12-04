@@ -1,0 +1,162 @@
+body {
+  height: 100%;
+}
+* {
+  font-family: SourceHanSansCN-Regular !important;
+}
+/*
+* 按钮阴影
+*/
+.mainBtn {
+  background: -webkit-linear-gradient(left, #5d9ff3 0%, #3482ee 100%);
+  background: linear-gradient(left, #5d9ff3 0%, #3482ee 100%);
+  color: #ffffff;
+  box-shadow: 0 0.08rem 0.2rem 0 rgba(53, 131, 238, 0.5);
+}
+/*
+* 搜素框样式
+*/
+.search_warp {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.search_warp input {
+  width: 100%;
+  height: 100%;
+  border-radius: 100rem;
+  background-color: #f5f5f5;
+  padding-left: 0.76rem;
+  padding-right: 0.76rem;
+}
+.search_warp i {
+  position: absolute;
+  top: calc(50% - 8px);
+}
+.search_warp i:first-child {
+  left: 0.3rem;
+}
+.search_warp i:last-child {
+  right: 0.3rem;
+}
+input::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 0.24rem;
+}
+.search i {
+  color: #999999;
+}
+/*
+* 超出隐藏
+*/
+.textover {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*
+* 下边线
+*/
+.borBom {
+  border-bottom: 1px solid #e5e5e5;
+}
+/*
+* 清楚浮动
+*/
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+/*
+* 侧边栏
+*/
+.sidebar_content {
+  padding: 0.3rem 0 0;
+  height: calc(100% - 0.3rem);
+}
+.sidebar_content .content_btnGroup {
+  width: 100%;
+}
+.sidebar_content .item_box {
+  padding: 0 0.2rem;
+  height: calc(100% - 40px);
+  padding-bottom: 0.2rem;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.sidebar_content .item .item_title {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+.sidebar_content .item .item_title .title {
+  font-size: 0.3rem;
+  color: #333333;
+  float: left;
+}
+.sidebar_content .item .item_title span {
+  float: right;
+  color: #999999;
+  font-size: 0.24rem;
+}
+.sidebar_content .item_box .content_item {
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.selBox {
+  flex: 5;
+  width: 5.5rem;
+  height: 0.6rem;
+  background: rgba(245, 245, 245, 1);
+  border-radius: 0.3rem;
+  text-align: center;
+  text-align-last: center;
+}
+.sidebar_content .item_box .content_item div {
+  float: left;
+  height: 0.6rem;
+  width: 30%;
+  padding: 0 2%;
+  box-sizing: border-box;
+  margin: 0 1.5% 2%;
+  background-color: #f5f5f5;
+  border-radius: 0.6rem;
+  text-align: center;
+  line-height: 0.6rem;
+  font-size: 0.24rem;
+}
+.sidebar_content .item_box .content_item div.active {
+  background-color: #3986ef;
+  color: #ffffff;
+}
+.sidebar_content .item_box .content_item.minH {
+  height: 1.4rem;
+  overflow: hidden;
+}
+/*
+* 开关样式
+*/
+.my_switch.nut-switch.nut-switch-active .nut-switch-btn {
+  background-color: #ffffff;
+}
+.my_switch.nut-switch .nut-switch-btn {
+  background-color: #ffffff;
+}
+.my_switch.nut-switch.nut-switch-active {
+  border-color: #3482ee;
+  background-color: #3482ee;
+}
+.my_switch.nut-switch {
+  border-color: #cccccc;
+  background-color: #cccccc;
+}
+/*
+* 背景色
+*/
+.nut-actionsheet-panel {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
